@@ -1,0 +1,441 @@
+/* Doument
+ * ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ */
+
+ :where(html) {
+  line-height: 1.15; /* 1 */
+}
+
+/* Sections
+ * ========================================================================== */
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Edge, Firefox, and Safari.
+ */
+
+:where(h1) {
+  font-size: 2em;
+  margin-block-end: 0.67em;
+  margin-block-start: 0.67em;
+}
+
+/* Grouping content
+ * ========================================================================== */
+
+/**
+ * Remove the margin on nested lists in Chrome, Edge, and Safari.
+ */
+
+:where(dl, ol, ul) :where(dl, ol, ul) {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Correct the inheritance of border color in Firefox.
+ */
+
+:where(hr) {
+  box-sizing: content-box; /* 1 */
+  color: inherit; /* 2 */
+  height: 0; /* 1 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+:where(pre) {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+ * ========================================================================== */
+
+/**
+ * Add the correct text decoration in Safari.
+ */
+
+:where(abbr[title]) {
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+:where(b, strong) {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+:where(code, kbd, samp) {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+:where(small) {
+  font-size: 80%;
+}
+
+/* Tabular data
+ * ========================================================================== */
+
+/**
+ * 1. Correct table border color in Chrome, Edge, and Safari.
+ * 2. Remove text indentation from table contents in Chrome, Edge, and Safari.
+ */
+
+:where(table) {
+  border-color: currentColor; /* 1 */
+  text-indent: 0; /* 2 */
+}
+
+/* Forms
+ * ========================================================================== */
+
+/**
+ * Remove the margin on controls in Safari.
+ */
+
+:where(button, input, select) {
+  margin: 0;
+}
+
+/**
+ * Remove the inheritance of text transform in Firefox.
+ */
+
+:where(button) {
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style buttons in iOS and Safari.
+ */
+
+:where(button, input:is([type="button" i], [type="reset" i], [type="submit" i])) {
+  -webkit-appearance: button;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Edge, and Firefox.
+ */
+
+:where(progress) {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the inheritance of text transform in Firefox.
+ */
+
+:where(select) {
+  text-transform: none;
+}
+
+/**
+ * Remove the margin in Firefox and Safari.
+ */
+
+:where(textarea) {
+  margin: 0;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome, Edge, and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+:where(input[type="search" i]) {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Safari.
+ */
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * Remove the inner padding in Chrome, Edge, and Safari on macOS.
+ */
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style upload buttons in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding of focus outlines in Firefox.
+ */
+
+:where(button, input:is([type="button" i], [type="color" i], [type="reset" i], [type="submit" i]))::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus outline styles unset by the previous rule in Firefox.
+ */
+
+:where(button, input:is([type="button" i], [type="color" i], [type="reset" i], [type="submit" i]))::-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove the additional :invalid styles in Firefox.
+ */
+
+:where(:-moz-ui-invalid) {
+  box-shadow: none;
+}
+
+/* Interactive
+ * ========================================================================== */
+
+/*
+ * Add the correct styles in Safari.
+ */
+
+:where(dialog) {
+  background-color: white;
+  border: solid;
+  color: black;
+  height: -moz-fit-content;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+:where(dialog:not([open])) {
+  display: none;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+:where(summary) {
+  display: list-item;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p, a {
+  font-family: Nunito Sans, Arial;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+}
+
+.projects__slider {
+  background-color: black;
+}
+
+.container {
+  max-width: 1256px;
+  margin: 0 auto;
+}
+
+.projects__container {
+  display: flex;
+}
+
+.projects__left-part {
+  margin-top: 176px;
+  margin-left: 20px;
+}
+
+.title {
+  font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.projects__title {
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  margin-bottom: 34px;
+}
+
+.projects__text {
+  font-size: 14px;
+  line-height: 27px;
+  margin-right: 50px;
+  margin-bottom: 42px;
+}
+
+.projects__grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 2vw;
+}
+
+.projects__grid-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.projects__grid-text {
+  font-size: 13px;
+  line-height: 21px;
+  margin-top: 9px;
+}
+
+.projects__slider-arrows {
+  margin-top: 85px;
+  display: flex;
+}
+
+.projects__slider-arrow {
+  background: none;
+  border-style: none;
+  padding: 0;
+  line-height: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  min-height: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.projects__slider-arrow:hover {
+  border-style: none;
+}
+
+.projects__slider-arrow.left {
+  background-image: url(../Images/1-Left.svg);
+  width: 60px;
+}
+
+.projects__slider-arrow.right {
+  background-image: url(../Images/3-Right.svg);
+  width: 60px;
+}
+
+.projects__slider-dots {
+  display: flex;
+}
+
+.projects__slider-dots-item {
+  width: 10px;
+  height: 10px;
+  background: rgb(70, 70, 70);
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.projects__slider-dots-item:hover, .projects__slider-dots-item.active {
+  background: rgb(241, 241, 241);
+}
+
+.projects__right-part {
+  padding-bottom: 416px;
+  margin-right: 20px;
+}
+
+.projects__link-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 107px;
+  margin-bottom: 52px;
+}
+
+.projects__slider-title {
+  font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.projects__slider-title:hover, .projects__slider-title.active {
+  color: #E3B873;
+  text-decoration: underline;
+}
+
+.projects__slider-images {
+  position: relative;
+  width: 679px;
+  height: 482px;
+}
+
+.projects__slider-images .image {
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 800ms ease;
+}
+
+.projects__slider-images .image.active {
+  opacity: 1;
+}
+
+.city, .area, .time, .cost {
+  font-size: 13px;
+  line-height: 21px;
+  margin-top: 9px;
+  color: white;
+}
